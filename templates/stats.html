@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Performance Stats</h2>
+<canvas id="statsChart" height="100"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const stats = {{ stats|tojson }};
+const labels = stats.map(s => new Date(s.date).toLocaleString());
+const wpmData = stats.map(s => s.wpm);
+const accuracyData = stats.map(s => s.accuracy);
+
+const data = {
+    labels: labels,
+    datasets: [
+        { label: 'WPM', data: wpmData, borderColor: 'blue', fill: false, tension:0.3 },
+        { label: 'Accuracy (%)', data: accuracyData, borderColor: 'green', fill: false, tension:0.3 }
+    ]
+};
+
+const config = { type: 'line', data: data, options: { responsive:true } };
+new Chart(document.getElementById('statsChart'), config);
+</script>
+{% endblock %}
