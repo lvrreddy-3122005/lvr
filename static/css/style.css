@@ -1,0 +1,28 @@
+#paragraph span.dim {
+    color: #999;
+}
+#paragraph span.correct {
+    color: green;
+}
+#paragraph span.incorrect {
+    color: red;
+}
+#paragraph span.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+#typedText {
+    font-family: monospace;
+    font-size: 20px;
+}
+#paragraph {
+    font-family: monospace;
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+.correct { color: green; }
+.incorrect { color: red; }
+.active { text-decoration: underline; color: blue; }
+.dim { color: #aaa; }
+
