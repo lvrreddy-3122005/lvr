@@ -130,9 +130,4 @@ python setup_db.py
 
 This will drop all tables and recreate them fresh. Use carefully if you have production data.
 
-## License & Contributing
-
-Include a license file if you plan to share this publicly. Contributions are welcome — open an issue or a PR describing the change.
-
----
 
