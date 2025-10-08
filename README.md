@@ -136,4 +136,3 @@ Include a license file if you plan to share this publicly. Contributions are wel
 
 ---
 
-If you'd like, tell me whether you want a `requirements.txt` created now, or if you'd like me to run the app to find and fix the startup error you mentioned.
